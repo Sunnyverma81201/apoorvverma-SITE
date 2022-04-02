@@ -1,0 +1,19 @@
+{
+  "name": "apoorvverma_site",
+  "version": "1.0.0",
+  "description": "Website for Apoorv Verma",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sunnyverma81201/apoorvverma-SITE.git"
+  },
+  "author": "Apoorv Verma",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Sunnyverma81201/apoorvverma-SITE/issues"
+  },
+  "homepage": "https://github.com/Sunnyverma81201/apoorvverma-SITE#readme"
+}
