@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    display: grid;
+    background-image: url('/public/resources/img/background.webp');
+    background-size: auto 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(6px) brightness(50%);
+    height: 100vh;
+}
+
+#height-width {
+    color: rgb(151, 151, 151);
+}
+
+@media only screen and (min-width: 1440px) {
+    body {
+        background-size: 100%;
+    }
+}
