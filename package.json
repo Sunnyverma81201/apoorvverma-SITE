@@ -15,5 +15,6 @@
   "bugs": {
     "url": "https://github.com/Sunnyverma81201/apoorvverma-SITE/issues"
   },
-  "homepage": "https://github.com/Sunnyverma81201/apoorvverma-SITE#readme"
+  "homepage": "https://github.com/Sunnyverma81201/apoorvverma-SITE#readme",
+  "devDependencies": {}
 }
