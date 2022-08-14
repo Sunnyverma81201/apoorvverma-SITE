@@ -1,7 +1,28 @@
+
 :host{
-  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .content{
-  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
+  height: calc(100vh - calc(2vh + 150px));
+  z-index: 1000;
+}
+
+#name{
+  font-size:  4rem;
+}
+
+
+@media screen and (max-width: 450px) {
+  .content{
+    justify-content: start;
+  }
+  #name{
+    font-size: 5rem;
+  }
 }

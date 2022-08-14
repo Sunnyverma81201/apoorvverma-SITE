@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "apoorvverma-30b09": {
+      "hosting": {
+        "apoorv-verma": [
+          "apoorvverma-30b09"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "apoorvverma-30b09"
+  }
+}

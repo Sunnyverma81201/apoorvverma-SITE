@@ -5,10 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { NgParticlesModule } from "ng-particles";
+import { BackgroundComponent } from './components/background/background.component';
+import { NavComponent } from './components/nav/nav.component';
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    BackgroundComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,
