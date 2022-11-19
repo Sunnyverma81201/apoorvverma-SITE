@@ -100,21 +100,11 @@
             ],
             "scripts": []
           }
-        },
-        "deploy": {
-          "builder": "@angular/fire:deploy",
-          "options": {
-            "prerender": false,
-            "ssr": false,
-            "browserTarget": "apoorv-verma:build:production",
-            "firebaseProject": "apoorvverma-30b09",
-            "firebaseHostingSite": "apoorvverma-30b09"
-          }
         }
       }
     }
   },
   "cli": {
-    "analytics": "a50fef1a-dd7e-4fc9-b7ee-5920b845fc78"
+    "analytics": false
   }
 }

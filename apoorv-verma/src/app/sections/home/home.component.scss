@@ -1,0 +1,190 @@
+:host {
+  color: #fff;
+}
+
+#home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #353353;
+  padding-inline: 10px;
+  height: 100vh;
+  width: 100%;
+}
+
+#name {
+  font-size: 32pt;
+  font-weight: bold;
+}
+
+#my-image {
+  border-radius: 50%;
+  height: 160px;
+  width: 160px;
+  margin: 20px;
+}
+
+font{
+  color: #ff6611;
+  margin-inline: 3px;
+}
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  font-size: 18pt;
+  margin: 5px;
+}
+
+.social-links>a {
+  text-decoration: none;
+  color: #fff;
+}
+
+
+
+.wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 18px;
+
+  &:before {
+    content: "<";
+  }
+
+  &:after {
+    content: ">";
+  }
+
+  &:before,
+  &:after {
+    color: #ffd15c;
+    font-weight: bold;
+    font-size: 24px;
+    animation: flicker 4s infinite;
+  }
+}
+
+span {
+  display: block
+}
+
+p {
+  display: inline-block;
+  height: 20px;
+  overflow: hidden;
+  margin: 25px;
+  font-size: 18px;
+  position: relative;
+}
+
+.flip {
+  margin-left: 0;
+  text-align: center;
+}
+
+.flip span {
+  animation: flip 8s infinite;
+  transition: .75s;
+}
+
+@keyframes flip {
+  0% {
+    transform: translateY(0)
+  }
+
+  25% {
+    transform: translateY(-100%)
+  }
+
+  50% {
+    transform: translateY(-200%)
+  }
+
+  75% {
+    transform: translateY(-300%)
+  }
+
+  100% {
+    transform: translateY(0)
+  }
+}
+
+@keyframes flicker {
+
+  0%,
+  100% {
+    opacity: 0
+  }
+
+  50% {
+    opacity: 1
+  }
+}
+
+/* parallax effect */
+
+.parallax {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+
+// top section parallax
+.parallax .layer {
+  position: absolute;
+}
+.parallax .p1 {
+  left: 10% !important;
+  top: 10% !important;
+}
+.parallax .p2 {
+  left: 25% !important;
+  top: 30% !important;
+}
+.parallax .p3 {
+  left: 16% !important;
+  top: 65% !important;
+}
+.parallax .p4 {
+  left: 10% !important;
+  top: 80% !important;
+}
+.parallax .p5 {
+  left: 45% !important;
+  top: 10% !important;
+}
+.parallax .p6 {
+  left: 40% !important;
+  top: 85% !important;
+}
+.parallax .p7 {
+  top: 20% !important;
+  left: 70% !important;
+}
+.parallax .p8 {
+  left: 70% !important;
+  top: 80% !important;
+}
+.parallax .p9 {
+  left: 90% !important;
+  top: 10% !important;
+}
+.parallax .p10 {
+  left: 80% !important;
+  top: 45% !important;
+}
+.parallax .p11 {
+  left: 90% !important;
+  top: 90% !important;
+}
+
+
+.btn-danger {
+  border-radius: 50px;
+}

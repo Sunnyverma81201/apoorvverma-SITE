@@ -1,0 +1,172 @@
+:host{
+  border: 10px solid #ff1151;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #353353;
+  color: #fff;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#name {
+  font-size: 24pt;
+  font-weight: bold;
+}
+
+#my-image {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  margin: 20px;
+}
+
+#description{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:before {
+    content: "<";
+  }
+
+  &:after {
+    content: ">";
+  }
+
+  &:before,
+  &:after {
+    color: #ffd15c;
+    font-weight: bold;
+    font-size: 24px;
+  }
+}
+
+font{
+  color: #ff6611;
+  margin-inline: 3px;
+}
+#email {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  font-size: 12pt;
+  margin: 5px;
+}
+
+.social-links{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  font-size: 18pt;
+  margin: 5px;
+}
+
+.social-links > a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#email > a{
+  text-decoration: none;
+  color: #fff;
+}
+
+
+#email > a:hover{
+  color: #ff1151;
+  transition: 300ms ease-in;
+}
+
+
+.wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-family: monospace;
+  font-size: 18px;
+
+  &:before {
+    content: "<";
+  }
+
+  &:after {
+    content: ">";
+  }
+
+  &:before,
+  &:after {
+    color: #ffd15c;
+    font-weight: bold;
+    font-size: 24px;
+    animation: flicker 4s infinite;
+  }
+}
+
+span {
+  display: block
+}
+
+p {
+  display: inline-block;
+  height: 20px;
+  overflow: hidden;
+  margin: 25px;
+  font-size: 18px;
+  position: relative;
+}
+
+.flip {
+  margin-left: 0;
+  text-align: center;
+}
+
+.flip span {
+  animation: flip 8s infinite;
+  transition: .75s;
+}
+
+@keyframes flip {
+  0% {
+    transform: translateY(0)
+  }
+
+  25% {
+    transform: translateY(-100%)
+  }
+
+  50% {
+    transform: translateY(-200%)
+  }
+
+  75% {
+    transform: translateY(-300%)
+  }
+
+  100% {
+    transform: translateY(0)
+  }
+}
+
+@keyframes flicker {
+
+  0%,
+  100% {
+    opacity: 0
+  }
+
+  50% {
+    opacity: 1
+  }
+}
+
+#logo{
+  top: 0;
+  left: 0;
+  margin: 15px;
+  position: absolute;
+}

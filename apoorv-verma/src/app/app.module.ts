@@ -1,23 +1,28 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './components/home/home.component';
-import { NgParticlesModule } from "ng-particles";
-import { BackgroundComponent } from './components/background/background.component';
-import { NavComponent } from './components/nav/nav.component';
+import { NavigationComponent } from './navigation/navigation.component';
+import { HomeComponent } from './sections/home/home.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { AboutComponent } from './sections/about/about.component';
+import { BusinessCardComponent } from './business-card/business-card.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MdbModalModule } from 'mdb-angular-ui-kit/modal';
+
+
 @NgModule({
   declarations: [
     AppComponent,
+    NavigationComponent,
     HomeComponent,
-    BackgroundComponent,
-    NavComponent
+    AboutComponent,
+    BusinessCardComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    NgParticlesModule
+    FontAwesomeModule,
+    BrowserAnimationsModule,
+    MdbModalModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,20 @@
+:host{
+  display: grid;
+  grid-template-columns: 110px auto;
+  align-items: stretch;
+}
+
+main{
+  overflow: scroll;
+  scroll-behavior: smooth;
+}
+
+
+app-navigation{
+  top: 0;
+  position: sticky;
+}
+
+section{
+  position: relative;
+}
