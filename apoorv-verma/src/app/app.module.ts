@@ -22,7 +22,7 @@ import { MdbModalModule } from 'mdb-angular-ui-kit/modal';
     BrowserModule,
     FontAwesomeModule,
     BrowserAnimationsModule,
-    MdbModalModule
+    MdbModalModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
